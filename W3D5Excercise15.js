@@ -11,18 +11,18 @@ function groupAnimals(animals) {
       if (hasil.length === 0) {
         hasil.push([animals[x]]);
 
-    } else if (hasil[indeks][0][0] === animals[x][0]) {
-        hasil[indeks].push(animals[i]);
+    } else if (hasil[indexs][0][0] === animals[x][0]) {
+        hasil[indexs].push(animals[x]);
       
     } else {
      hasil.push([animals[x]]);
-     indeks++;
+     indexs++;
       }
     }
      return hasil;
   }
   
-  // TEST CASES
+  
   console.log(groupAnimals(['cacing', 'ayam', 'kuda', 'anoa', 'kancil']));
   // [ ['ayam', 'anoa'], ['cacing'], ['kuda'] ]
   console.log('\n');
